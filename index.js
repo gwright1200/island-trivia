@@ -13,6 +13,7 @@ const questionAnswerData = [
         //style: "float: l%; margin-right: 1%; margin-bottom: 0.5em;",
         correct: false,
         class: "answerimg"
+
       },
       {
         answer: "St James Parish Church",
@@ -45,6 +46,7 @@ const questionAnswerData = [
        //style:float: l%; margin-right: 1%; margin-bottom: 0.5em;"
        correct: false,
        class:"answerimg"
+       
       
       },
       {
@@ -81,6 +83,7 @@ const questionAnswerData = [
       //style="float: l%; margin-right: 1%; margin-bottom: 0.5em;" 
       correct: false,
        class:"answerimg"
+       
    
      },
      {
@@ -118,6 +121,7 @@ const questionAnswerData = [
       //style="float: l%; margin-right: 1%; margin-bottom: 0.5em;"
       correct:true,
        class:"answerimg"
+     
       
       },
       {
@@ -189,6 +193,7 @@ const questionAnswerData = [
       //style="float: l%; margin-right: 1%; margin-bottom: 0.5em;"
       correct: false,
       class: "answerimg" 
+
      
       }, 
       {
@@ -226,7 +231,9 @@ const questionAnswerData = [
       imgUrl:"http://www.sabagov.nl/images/main_airport.jpg",
       //style="float: l%; margin-right: 1%; margin-bottom: 0.5em;"
       correct: false,
-      class: "answerimg"
+      class: "answerimg",
+      ratio: "priorityHeight"
+      
        
      }, 
      {
@@ -265,6 +272,7 @@ const questionAnswerData = [
       //style="float: l%; margin-right: 1%; margin-bottom: 0.5em;"
       correct: true,
       class: "answerimg"  
+      
         
         }, 
         { 
@@ -303,6 +311,7 @@ const questionAnswerData = [
       //style="float: l%; margin-right: 1%; margin-bottom: 0.5em;"
       correct: false,
       class: "answerimg"
+      
         
         }, 
         { 
@@ -340,6 +349,7 @@ const questionAnswerData = [
       //style="float: l%; margin-right: 1%; margin-bottom: 0.5em;" 
       correct: true,
       class: "answerimg"
+    
 
         }, 
         { 
@@ -389,6 +399,7 @@ function startQuiz() {
     renderQuoteAndAnswers();
     styleSelectedOption();
     $('.first-page').remove();
+    $('.header').addClass('hide');
   });
 }
 function styleSelectedOption() {
@@ -407,10 +418,14 @@ function renderQuestionPage() {
 function renderQuoteAndAnswers() {
 //changes the text of quotes, answer options, the question count and the point count
   $( '.question-page' ).ready(function() {
+    let _ratio = questionAnswerData[questionNumber].answerOptions[0].ratio;
     $('input[name="answer-option"]').prop('checked', false);
     $('span[class="quote"]').html(questionAnswerData[questionNumber].quote);
     $('span[class="answer1"]').html(questionAnswerData[questionNumber].answerOptions[0].answer);
-    $('span.image').html("<img src='" + questionAnswerData[questionNumber].answerOptions[0].imgUrl + "' />");
+    if(_ratio) {
+      $('span.nimg').addClass('priorityHeight');
+    }
+    $('span.nimg').html("<img src='" + questionAnswerData[questionNumber].answerOptions[0].imgUrl + "' />");
     $('span[class="answer2"]').html(questionAnswerData[questionNumber].answerOptions[1].answer);
     $('span[class="answer3"]').html(questionAnswerData[questionNumber].answerOptions[2].answer);
     $('span[class="answer4"]').html(questionAnswerData[questionNumber].answerOptions[3].answer);
@@ -424,6 +439,7 @@ function submitAnswer() {
 //when an answer is submitted, determines if the answer is correct.
     $('form').on('submit', function(event) {
      event.preventDefault();
+     $('html,body').animate({scrollTop:0},0);
      let correctAnswer= questionAnswerData[questionNumber].answerOptions.map((el) => el.correct).indexOf(true);
      let userAnswer= $('input[name=answer-option]:checked').val();
      
