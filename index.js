@@ -4,8 +4,8 @@ let questionNumber = 0;
 let points = 0;
 //questionNumber is manipulated by nextQuestionNumber to be equal to the current question number
 const questionAnswerData = [
-  {
-    quote: "What is the oldest church in Barbados.", 
+  
+    {quote: "What Is The Oldest Church In Barbados?", 
     answerOptions: [
       {
         answer :"St Joseph Church",
@@ -38,11 +38,11 @@ const questionAnswerData = [
     ]
   },
                                              
-    {quote: "What waterfall is the most popular tourist attraction in Jamaica.", 
+    {quote: "What Waterfall Is The Most Popular Tourist Attraction In Jamaica.", 
       answerOptions: [
       {
         answer: "YS Falls",
-       imgUrl:"https://media-cdn.tripadvisor.com/media/photo-l/12/25/fc/a9/photo1jpg.jpg",
+       imgUrl:"https://images.pexels.com/photos/6832/waterfall-beauty-lets-explore-lets-get-lost.jpg?auto=compress&cs=tinysrgb&h=350ss",
        //style:float: l%; margin-right: 1%; margin-bottom: 0.5em;"
        correct: false,
        class:"answerimg"
@@ -68,14 +68,14 @@ const questionAnswerData = [
       {
 
         answer: "Dunns River Falls",
-        imgUrl:"http://www.dunnsriverfallsja.com/sites/default/files/styles/main-slider/public/field/image/slide1.png?itok=c7wyBond",
+        imgUrl:"https://images.pexels.com/photos/6832/waterfall-beauty-lets-explore-lets-get-lost.jpg?auto=compress&cs=tinysrgb&h=350s",
         //style="float: l%; margin-right: 1%; margin-bottom: 0.5em;" 
         correct: true
       }
     ]
   },
                                              
-    {quote: "What is the capital of Haiti?",
+    {quote: "What Is The Capital Of Haiti?",
       answerOptions: [
       {
       answer: "Petionville",
@@ -113,7 +113,7 @@ const questionAnswerData = [
       },
          
                                              
-    {quote: " What island is comprise of two seperate countries?", 
+    {quote: " What Island Is Comprise Of Two Seperate Countries?", 
       answerOptions: [
       {
         answer: "Sint Maarten", 
@@ -151,7 +151,7 @@ const questionAnswerData = [
     },
         
                                              
-    {quote: "What island is known for the most beautiful beaches?", 
+    {quote: "What Island Is Known For The Most Beautiful Beaches?", 
       answerOptions: [
       {
     answer: "Pink Sands Beach  Bahamas ",
@@ -185,7 +185,7 @@ const questionAnswerData = [
          ]
       },   
                                              
-    {quote: "What beach town in Haiti  ______  is home to art and film festivals?.", 
+    {quote: "What Beach Town In Haiti  ______  Is Home To Art And Film Festivals?", 
       answerOptions: [
       {
         answer: "Grann Do Beach", 
@@ -223,7 +223,7 @@ const questionAnswerData = [
        ]
      },
                                              
-    {quote: "The shortest runway on earth, not more than 1,300 feet long, can be found at the Caribbean airport?",
+    {quote: "The Shortest Runway On Earth, Not More Than 1,300 Feet Long, Can Be Found At The Caribbean Airport?",
       answerOptions: [
       {
       
@@ -264,7 +264,7 @@ const questionAnswerData = [
       ]
     },
                                              
-    {quote: "What island has the most underwater sculptures?",
+    {quote: "What Island Has The Most Underwater Sculptures?",
       answerOptions: [
       {
         answer: "Grenada", 
@@ -303,7 +303,7 @@ const questionAnswerData = [
         ]
       },
                                              
-    {quote: "What is  % of the islands that inhabited?", 
+    {quote: "What Is  % Of The Islands That Inhabited?", 
       answerOptions: [
       {
         answer: "7%", 
@@ -341,7 +341,7 @@ const questionAnswerData = [
         ]
       },   
                                              
-    {quote: "Which caribbean cusine is considered the people choice ? ", 
+    {quote: "Which Caribbean Cusine Is Considered The People Choice ? ", 
       answerOptions: [
       {
         answer: "Jerk Chicken",
@@ -349,6 +349,7 @@ const questionAnswerData = [
       //style="float: l%; margin-right: 1%; margin-bottom: 0.5em;" 
       correct: true,
       class: "answerimg"
+
     
 
         }, 
@@ -420,7 +421,7 @@ function renderQuoteAndAnswers() {
   $( '.question-page' ).ready(function() {
     let _ratio = questionAnswerData[questionNumber].answerOptions[0].ratio;
     $('input[name="answer-option"]').prop('checked', false);
-    $('span[class="quote"]').html(questionAnswerData[questionNumber].quote);
+    $('div[class="quote"]').html(questionAnswerData[questionNumber].quote);
     $('span[class="answer1"]').html(questionAnswerData[questionNumber].answerOptions[0].answer);
     if(_ratio) {
       $('span.nimg').addClass('priorityHeight');

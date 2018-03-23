@@ -5,7 +5,7 @@
 
 
 html {
-  font-family: "Roboto", Sans-Serif;
+  font-family: Berkshire Swash, cursive;
   font-size: 15px;
   background-color: #1E90FF;
   text-align: center;
@@ -62,13 +62,13 @@ fieldset {
   border: none;
   text-align: center;
   width: 75%;
-  border-radius: 3px;
+  border-radius: 2px;
   margin: auto;
 }
 
 
  .quote {
-  font-family: "Roboto slab", Serif;
+  font-family: Berkshire Swash, cursive;
   font-size: 17px;
   color:white;
 }
@@ -86,9 +86,9 @@ fieldset {
 
 .counter, .points-counter {
   font-weight: bold;
-  font-size: 15px;
-  display: inline-block;
-  margin-bottom: 0;
+  font-size: 20px;
+  display: inline-block,center;
+  margin-bottom: 5px;
   margin-top: 5px;
 }
 
@@ -277,7 +277,25 @@ img {
 }    
 .nimg {
   display: inline-block; 
-  height: 276px;
+  height: 300px;
   overflow: hidden;
   width: 460px;
+}
+
+.quote-question-section {
+  height: 136px;
+}
+
+.column {
+  float: left;
+  height: 100%;
+}
+
+.wide {
+  width: 66%;
+}
+
+.narrow {
+  border-left: 1px solid rgba(255,255,255, 0.7);
+  width: 34%;
 }
