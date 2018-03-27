@@ -62,7 +62,7 @@ fieldset {
   border: 100%;
   text-align: center;
   width: 75%;
-  border-radius: 3px;
+  border-radius: 2px;
   margin: auto;
 }
 
@@ -270,11 +270,6 @@ img {
   width:100%;
 }
 
-.priorityHeight > img {
-  height: 100%;
-  margin-left: -170px;
-  width: auto;
-}
 
 
 }    
@@ -288,6 +283,8 @@ img {
 
 .quote-question-section {
   height: 156px;
+  overflow: hidden;
+  width: 460px;
 }
 
 .column {

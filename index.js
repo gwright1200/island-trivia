@@ -232,6 +232,7 @@ const questionAnswerData = [
       //style="float: l%; margin-right: 1%; margin-bottom: 0.5em;"
       correct: false,
       class: "answerimg",
+      
      
       
        
@@ -423,9 +424,9 @@ function renderQuoteAndAnswers() {
     $('input[name="answer-option"]').prop('checked', false);
     $('div[class="quote vcenter"]').html(questionAnswerData[questionNumber].quote);
     $('span[class="answer1"]').html(questionAnswerData[questionNumber].answerOptions[0].answer);
-    if(_ratio) {
+    if(_ratio) 
       $('span.nimg').addClass('priorityHeight');
-    }
+    
     $('span.nimg').html("<img src='" + questionAnswerData[questionNumber].answerOptions[0].imgUrl + "' />");
     $('span[class="answer2"]').html(questionAnswerData[questionNumber].answerOptions[1].answer);
     $('span[class="answer3"]').html(questionAnswerData[questionNumber].answerOptions[2].answer);
