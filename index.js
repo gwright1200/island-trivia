@@ -223,7 +223,7 @@ const questionAnswerData = [
        ]
      },
                                              
-    {quote: "The Shortest Runway On Earth, Not More Than 1,300 Feet Long, Can Be Found At The Caribbean Airport?",
+    {quote: "The Shortest Runway On Earth,?",
       answerOptions: [
       {
       
@@ -421,7 +421,7 @@ function renderQuoteAndAnswers() {
   $( '.question-page' ).ready(function() {
     let _ratio = questionAnswerData[questionNumber].answerOptions[0].ratio;
     $('input[name="answer-option"]').prop('checked', false);
-    $('div[class="quote"]').html(questionAnswerData[questionNumber].quote);
+    $('div[class="quote vcenter"]').html(questionAnswerData[questionNumber].quote);
     $('span[class="answer1"]').html(questionAnswerData[questionNumber].answerOptions[0].answer);
     if(_ratio) {
       $('span.nimg').addClass('priorityHeight');
