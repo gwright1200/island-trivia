@@ -228,18 +228,18 @@ const questionAnswerData = [
       {
       
       answer: "St Kitts", 
-      imgUrl:"http://www.sabagov.nl/images/main_airport.jpg",
+      imgUrl:"https://cdn.airplane-pictures.net/images/uploaded-images/2017/12/30/1006298as.jpg",
       //style="float: l%; margin-right: 1%; margin-bottom: 0.5em;"
       correct: false,
       class: "answerimg",
-      ratio: "priorityHeight"
+     
       
        
      }, 
      {
         
         answer: "Saba",
-        imgUrl:"https://bviaa.com/sites/default/files/color/nevia_color_cache/slider-runway.jpg",
+        imgUrl:"http://www.news965.com/rw/Pub/p8/News965/2017/07/13/Images/maxresdefault-28-696x392.jpg",
         //style="float: l%; margin-right: 1%; margin-bottom: 0.5em;"
         correct: true
       
@@ -272,7 +272,7 @@ const questionAnswerData = [
       //style="float: l%; margin-right: 1%; margin-bottom: 0.5em;"
       correct: true,
       class: "answerimg"  
-      
+     
         
         }, 
         { 
@@ -349,7 +349,7 @@ const questionAnswerData = [
       //style="float: l%; margin-right: 1%; margin-bottom: 0.5em;" 
       correct: true,
       class: "answerimg"
-
+    
     
 
         }, 
