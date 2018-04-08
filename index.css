@@ -11,6 +11,23 @@ html {
   text-align: center;
 }
 
+.y-wrap {
+  border: 1px ;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .y-wrap{
+    width:80%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .y-wrap{
+    width: 1000px;
+  }
+}
+
 header intro-text{
   background-color:#1E90FF;
   color: #1ba39c;
@@ -108,13 +125,13 @@ fieldset {
 
 .next-question-btn {
   width: 75%;
-  padding: 10px;
+  padding: 3px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
   margin-bottom: 10px;
-  transition: all .4s ease-in-out 0s;
+  
 }
 
 .submit-answer {
@@ -150,7 +167,7 @@ fieldset {
   width: 90%;
   border-radius: 10px;
   color: #FFFFFF;
-  transition: all .4s ease-in-out 0s;
+  
 }
 
 .quote-section {
@@ -159,7 +176,6 @@ fieldset {
   opacity: .95;
   border-radius: 3px;
   margin: auto;
-  width: 75%;
   height: auto;
 }
 
@@ -168,8 +184,7 @@ fieldset {
 }
 
 .correct-answer-text, .incorrect-answer-text {
-  padding-top: 5px;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: normal;
 }
 
@@ -186,7 +201,7 @@ body {
 }
 
 
-@media only screen and (min-width: 1000px) {
+
   
 header {
   height: 100px;
@@ -230,11 +245,11 @@ section {
   left: 50%;
   padding-left: 1.04166666%;
   padding-right: 1.04166666%;
-  width: 50%;
+  
 }
 
 .feedback, .final-page {
-  width: 33%;
+ 
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -262,12 +277,13 @@ section:after, .feedback:after {
 }
 
 .adjust{
-  margin-top: -70px: 
+  margin-top: -70px;
 }
 
 img {
-  height: auto;
+  border: none;
   width:100%;
+  box-sizing: border-box;
 }
 
 
@@ -277,14 +293,14 @@ img {
   display: inline-block; 
   height: 267px;
   overflow: hidden;
-  width: 460px;
-  margin-bottom: -5px;
+  width: 100%;
+  margin-bottom: -8px;
 }
 
 .quote-question-section {
   height: 156px;
   overflow: hidden;
-  width: 460px;
+  /*width: 460px;*/
 }
 
 .column {
