@@ -16,6 +16,16 @@ body {
   }
 }
 
+fieldset {
+  background-color: white;
+  opacity: .98;
+  border: 100%;
+  text-align: center;
+  width: 75%;
+  border-radius: 2px;
+  margin: auto;
+}
+
 h1 {
   font-size: 30px;
 }
@@ -49,7 +59,6 @@ main {
 LAYOUTS
 */
 .y-wrap {
-  border: 1px solid crimson;
   margin: 0 auto;
 }
 
@@ -74,7 +83,6 @@ MODULES
 }
 
 .page {
-  border: 1px solid navy;
   margin-top: 50px;
 }
 
@@ -99,6 +107,7 @@ MODULES
 
 .btn {
   background-color: #C24E00;
+  border: 1px solid transparent;
   border-radius: 10px;
   color: white; /* override browser specifity */
   display: block;
@@ -120,7 +129,7 @@ MODULES
   width: 90%;
 }
 
-.btn,
+.btn:hover,
 .answer-div:hover {
   background-color: #1ba39c;
 }
@@ -165,15 +174,7 @@ MODULES
 
 
 
-fieldset {
-  background-color: white;
-  opacity: .98;
-  border: 100%;
-  text-align: center;
-  width: 75%;
-  border-radius: 2px;
-  margin: auto;
-}
+
 
 
  .quote {
