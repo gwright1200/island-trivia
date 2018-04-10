@@ -112,6 +112,10 @@ MODULES
   width: 75%;
 }
 
+.btn-begin {
+  background-color: #C24E00;
+}
+
 .btn-modify {
   width: 90%;
 }
