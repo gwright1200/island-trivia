@@ -1,18 +1,55 @@
+/*
+BASE ELEMENTS
+*/
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
+body {
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding-bottom: 350px;
+  }
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 50px;
+  margin-top: -15px;
+}
+
+header {
+  height: 100px;
+  margin-bottom: 0;
+  margin-top: -10px;
+  padding-bottom: -100px;
+}
 
 html {
-  font-family: Berkshire Swash, cursive;
-  font-size: 15px;
   background-color: #1E90FF;
+  font-family: Berkshire Swash, cursive;
+  font-size: 18px;
   text-align: center;
 }
 
+main {
+
+}
+
+
+/*
+LAYOUTS
+*/
 .y-wrap {
-  border: 1px ;
+  border: 1px solid crimson;
   margin: 0 auto;
 }
 
@@ -28,17 +65,22 @@ html {
   }
 }
 
-header intro-text{
-  background-color:#1E90FF;
-  color: #1ba39c;
-  width: 100%;
-  margin-top: -15px;
-  padding-top: 3px;
-  padding-bottom: 20px;
-}
 
+/*
+MODULES
+*/
 .header.hide {
   display: none;
+}
+
+.page {
+  border: 1px solid navy;
+  margin-top: 50px;
+}
+
+.intro-div {
+  margin: 0 auto;
+  width: 90%;
 }
 
 .intro-image {
@@ -46,6 +88,59 @@ header intro-text{
   margin-bottom: 20px;
   border-radius: 10px;
 }
+
+.intro-text {
+  margin-bottom: 15px;
+}
+
+.banner {
+  margin: 30px 0 50px;
+}
+
+.btn {
+  background-color: #C24E00;
+  border-radius: 10px;
+  color: white; /* override browser specifity */
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  padding: 10px;
+  transition: all .4s ease-in-out 0s;
+  width: 75%;
+}
+
+.btn-modify {
+  width: 90%;
+}
+
+.btn,
+.answer-div:hover {
+  background-color: #1ba39c;
+}
+
+/* make DRY */
+.answer,
+.quiz-feedback {
+  width: 75%;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: all .4s ease-in-out 0s;
+}
+
+
+
+
+
+
+
+
 
 .feedback, .final-page {
   margin: 25px;
@@ -62,16 +157,9 @@ header intro-text{
   width: 90%;
 }
 
-.first-page, .question-page, .final-page {
-  height: 50%;
-  margin-top: 50px;
-}
 
-.intro-text {
-  margin-bottom: 15px;
-  color:white;
 
-}
+
 
 fieldset {
   background-color: white;
@@ -96,12 +184,7 @@ fieldset {
   content: '"';
 }
 
-.header-subtitle {
-  font-size: 15px;
-  margin-bottom: -15px;
-  margin-top: -15px;
-  color: white;
-}
+
 
 .counter, .points-counter {
   font-weight: bold;
@@ -112,16 +195,7 @@ fieldset {
 }
 
 
-.answer, .submit-answer, .quiz-feedback, .begin-btn, .restart-btn {
-  width: 75%;
-  padding: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  transition: all .4s ease-in-out 0s;
-}
+
 
 .next-question-btn {
   width: 75%;
@@ -131,19 +205,12 @@ fieldset {
   margin-right: auto;
   margin-top: 5px;
   margin-bottom: 10px;
-  
+
 }
 
-.submit-answer {
-  width: 90%;
-}
 
-.next-question-btn, .begin-btn, .restart-btn, .submit-answer  {
-  background-color: #C24E00;
-  font-weight: bold;
-  border-radius: 10px;
-  color: #FFFFFF;
-}
+
+
 
 .selected-option.answer-div {
   font-weight: bold;
@@ -157,9 +224,7 @@ fieldset {
   background-color: #C24E00;
 }
 
-.begin-btn:hover, .next-question-btn:hover, .begin-btn:hover, .restart-btn:hover, .submit-answer:hover, .answer-div:hover {
-  background-color: #1ba39c;
-}
+
 
 .answer-div {
   margin: auto;
@@ -167,7 +232,7 @@ fieldset {
   width: 90%;
   border-radius: 10px;
   color: #FFFFFF;
-  
+
 }
 
 .quote-section {
@@ -193,37 +258,14 @@ fieldset {
 }
 
 
-/*ipad portrait*/
-@media only screen and (min-width: 768px) {
-body {
-  padding-bottom: 350px;
-  }
-}
 
 
 
-  
-header {
-  height: 100px;
-  margin-bottom: 0;
-  margin-top: -10px;
-  padding-bottom: -100px;
-}
-  
-h1 {
-  font-size: 30px;
-  color:#FFFFFF;
-}  
-  
-html {
-  font-size: 18px;
 
-}
 
-.header-subtitle {
-  font-size: 18px;
-  margin-bottom: 50px;
-}
+
+
+
 
 .selected-option.answer-div {
   font-size: 20px;
@@ -238,26 +280,22 @@ html {
 .quote {
   font-size: 25px;
 }
-  
+
 section {
   max-width: 1000px;
   margin: 0 auto;
   left: 50%;
   padding-left: 1.04166666%;
   padding-right: 1.04166666%;
-  
+
 }
 
 .feedback, .final-page {
- 
+
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
-}
-
-.intro-div {
-  width: 100%;
 }
 
 .feedback-page-correct {
@@ -288,9 +326,9 @@ img {
 
 
 
-}    
+}
 .nimg {
-  display: inline-block; 
+  display: inline-block;
   height: 267px;
   overflow: hidden;
   width: 100%;
