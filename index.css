@@ -78,34 +78,11 @@ LAYOUTS
 /*
 MODULES
 */
-.header.hide {
-  display: none;
-}
-
-.page {
-  margin-top: 50px;
-}
-
-.intro-div {
-  margin: 0 auto;
-  width: 90%;
-}
-
-.intro-image {
-  width: 75%;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-.intro-text {
-  margin-bottom: 15px;
-}
-
 .banner {
   margin: 30px 0 50px;
 }
 
-.btn {
+btn {
   background-color: #C24E00;
   border: 1px solid transparent;
   border-radius: 10px;
@@ -133,6 +110,29 @@ MODULES
 .answer-div:hover {
   background-color: #1ba39c;
 }
+.header.hide {
+  display: none;
+}
+
+
+.intro-div {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.intro-image {
+  width: 75%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.intro-text {
+  margin-bottom: 15px;
+}
+
+.page {
+  margin-top: 50px;
+}
 
 /* make DRY */
 .answer,
@@ -150,12 +150,8 @@ MODULES
 
 
 
-
-
-
-
-
-.feedback, .final-page {
+.feedback, 
+.final-page {
   margin: 25px;
   padding: 25px;
   border-radius: 3px;
@@ -164,17 +160,12 @@ MODULES
   font-weight: bold;
 }
 
-.feedback-image, .final-image {
+.feedback-image, 
+.final-image {
   border-radius: 3px;
   margin-bottom: 20px;
   width: 90%;
 }
-
-
-
-
-
-
 
 
  .quote {
@@ -262,16 +253,6 @@ MODULES
   display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
 .selected-option.answer-div {
   font-size: 20px;
 }
@@ -313,11 +294,9 @@ section:before, .feedback:before,
 section:after, .feedback:after {
   display: block;
   content: '';
-}
-
-section:after, .feedback:after {
   clear: both;
 }
+
 
 .adjust{
   margin-top: -70px;

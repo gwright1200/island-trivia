@@ -183,9 +183,10 @@ const questionAnswerData = [
 
           }
          ]
-      },
 
-    {quote: "What Beach Town In Haiti  ______  Is Home To Art And Film Festivals?",
+                                             
+    {quote: "What's An Popular Beach Town In Haiti  ______ ?", 
+
       answerOptions: [
       {
         answer: "Grann Do Beach",
