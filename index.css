@@ -18,12 +18,8 @@ body {
 
 fieldset {
   background-color: white;
-  opacity: .98;
-  border: 100%;
-  text-align: center;
-  width: 75%;
-  border-radius: 2px;
   margin: auto;
+  text-align: center;
 }
 
 h1 {
@@ -74,24 +70,46 @@ ALIGNMENT
 /*******************
 ANSWERS
 *******************/
-.selected-option.answer-div {
-  font-weight: bold;
-  font-size: 17px;
-  background-color: #C24E00;
+@media only screen and (min-width: 992px) {
+  .answer-group {
+    float: left;
+    text-align: left;
+    width: 50%;
+  }
+  .answer-group:first-of-type {
+    text-align: right;
+  }
 }
 
-.selected-option.answer-div:hover {
+.selected-option.answer-div {
   font-weight: bold;
-  font-size: 17px;
+  font-size: 20px;
   background-color: #C24E00;
 }
 
 .answer-div {
-  margin: auto;
+  margin: 0 auto;
   background-color: #024959;
   width: 90%;
   border-radius: 10px;
   color: #FFFFFF;
+}
+
+@media only screen and (min-width: 768px) {
+  .answer-div {
+    width: 260px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .answer-div {
+    display: inline-block;
+    margin: 6px 14px;
+  }
+}
+
+.answer-div:hover {
+  background-color: #1ba39c;
 }
 
 .quote-section {
@@ -123,17 +141,14 @@ ANSWERS
 .correct-answer-text,
 .incorrect-answer-text {
   font-size: 15px;
-  font-weight: normal;
 }
 
-.selected-option.answer-div {
-  font-size: 20px;
-}
-
-.selected-option.answer-div:hover {
-  font-weight: bold;
-  font-size: 20px;
-  background-color: #035E73;
+@media only screen and (min-width: 768px) {
+  .correct-answer-text,
+  .incorrect-answer-text {
+    font-size: 24px;
+    font-weight: normal;
+  }
 }
 
 
@@ -164,31 +179,32 @@ BUTTONS
   width: 90%;
 }
 
-.btn:hover,
-.answer-div:hover {
-  background-color: #1ba39c;
+@media only screen and (min-width: 768px) {
+  .btn-modify {
+    width: 260px;
+  }
 }
 
-.next-question-btn {
-  width: 75%;
-  padding: 3px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  margin-bottom: 10px;
+@media only screen and (min-width: 992px) {
+  .btn-modify {
+    margin-top: 20px;
+  }
+}
+
+.btn:hover {
+  background-color: #1ba39c;
 }
 
 
 /*******************
 CLEARFIX
 *******************/
-section:before,
-section:after,
-.feedback:before,
-.feedback:after {
-  display: block;
-  content: '';
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
   clear: both;
 }
 
@@ -230,10 +246,9 @@ FEEDBACK
 *******************/
 .feedback,
 .final-page {
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
+  background-color:#4183D7;
+  font-weight: bold;
+  margin: 100px 0 0;
 }
 
 .feedback-page-correct {
@@ -250,16 +265,6 @@ FEEDBACK
   margin-top: 5px;
   margin-bottom: 5px;
   transition: all .4s ease-in-out 0s;
-}
-
-.feedback,
-.final-page {
-  margin: 25px;
-  padding: 25px;
-  border-radius: 3px;
-  background-color:#4183D7;
-  opacity: .98;
-  font-weight: bold;
 }
 
 .feedback-image,
@@ -281,9 +286,28 @@ IMAGES
   margin-bottom: -8px;
 }
 
+@media only screen and (min-width: 768px) {
+  .nimg {
+    height: 330px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .nimg {
+    height: 450px;
+  }
+}
+
 .pheight {
   height: 100%;
   width: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .pheight {
+    height: auto;
+    width: 100%;
+  }
 }
 
 .pwidth {
@@ -301,13 +325,13 @@ LAYOUTS
 
 @media only screen and (min-width: 768px) {
   .y-wrap{
-    width:80%;
+    width: 80%;
   }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 992px) {
   .y-wrap{
-    width: 1000px;
+    width: 780px;
   }
 }
 

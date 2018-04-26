@@ -50,29 +50,35 @@
 
               <form class="answer-options" id="answer-option-form" role="form">
                 <fieldset>
-                  <div class="answer-div">
-                    <label class="answer">
-                      <input required="true" name="answer-option" type="radio" value="0">
-                      <span class="answer1"></span>
-                    </label>
-                  </div>
-                  <div class="answer-div">
-                    <label class="answer">
-                      <input name="answer-option" required="true" type="radio" value="1">
-                      <span class="answer2"></span>
-                    </label>
-                  </div>
-                  <div class="answer-div">
-                    <label class="answer">
-                      <input name="answer-option" required="true" type="radio" value="2">
-                      <span class="answer3"></span>
-                    </label>
-                  </div>
-                  <div class="answer-div">
-                    <label class="answer">
-                      <input name="answer-option" required="true" type="radio" value="3">
-                      <span class="answer4"></span>
-                    </label>
+                  <div class="clearfix">
+                    <div class="answer-group">
+                      <div class="answer-div">
+                        <label class="answer">
+                          <input required="true" name="answer-option" type="radio" value="0">
+                          <span class="answer1"></span>
+                        </label>
+                      </div>
+                      <div class="answer-div">
+                        <label class="answer">
+                          <input name="answer-option" required="true" type="radio" value="1">
+                          <span class="answer2"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="answer-group">
+                      <div class="answer-div">
+                        <label class="answer">
+                          <input name="answer-option" required="true" type="radio" value="2">
+                          <span class="answer3"></span>
+                        </label>
+                      </div>
+                      <div class="answer-div">
+                        <label class="answer">
+                          <input name="answer-option" required="true" type="radio" value="3">
+                          <span class="answer4"></span>
+                        </label>
+                      </div>
+                    </div>
                   </div>
                   <button class="btn btn-modify" type="submit">Next</button>
                 </fieldset>
@@ -85,7 +91,7 @@
         <!-- Feedback page: correct -->
         <section class="feedback feedback-page-correct" role="region">
           <div class="correct-answer-text">Dass it Dass it!</div>
-          <button id="next-question-btn" class="btn">Next</button>
+          <button id="next-question-btn" class="btn btn-modify">Next</button>
           <div class="answer-feedback-correct">
             <img src="https://media.giphy.com/media/xT1Ra3ZdSebHMz2XzW/giphy.gif" alt="Island men giving each other an pound sign" class="feedback-image" />
           </div>
@@ -95,7 +101,7 @@
         <section class="feedback feedback-page-incorrect" role="region">
           <div class="answer-feedback-incorrect">
             <div class="incorrect-answer-text">Wrong ting. The correct answer is <span class="correct-answer"></span></div>
-            <button id="next-question-btn" class="btn">Next</button>
+            <button id="next-question-btn" class="btn btn-modify">Next</button>
             <img src="https://media.giphy.com/media/l4Ephk0hqUs47fXaM/giphy.gif" alt="Woman rolling eyes" class="feedback-image" />
           </div>
         </section>

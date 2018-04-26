@@ -17,7 +17,7 @@ const questionAnswerData = [
     ]
   },
   {
-    quote: "What Waterfall Is The Most Popular Tourist Attraction In Jamaica.",
+    quote: "What Is The Most Popular Waterfall In Jamaica.",
     imgUrl: "https://images.pexels.com/photos/6832/waterfall-beauty-lets-explore-lets-get-lost.jpg?auto=compress&cs=tinysrgb&h=350ss",
     imageClass: "pwidth",
     answerOptions: [
@@ -50,7 +50,7 @@ const questionAnswerData = [
     ]
   },
   {
-    quote: "What Island Is Known For The Most Beautiful Beaches?",
+    quote: "What Island Has The Most Beautiful Beaches?",
     imgUrl: "https://media.cntraveler.com/photos/59669110f9e37f55cb0bfab5/master/w_1440,c_limit/crane-beach-barbados-GettyImages-88530629.jpg",
     imageClass: "pheight",
     answerOptions: [
@@ -105,7 +105,7 @@ const questionAnswerData = [
     ]
   },
   {
-    quote: "Which Caribbean Cusine Is Considered The People Choice?",
+    quote: "Which Cusine Is A Popular Favorite?",
     imgUrl: "https://assets.epicurious.com/photos/560d993df3a00aeb2f1cf4de/6:4/w_620%2Ch_413/234807.jpg",
     imageClass: "pheight",
     answerOptions: [
